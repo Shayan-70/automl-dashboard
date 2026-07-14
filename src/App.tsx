@@ -394,7 +394,7 @@ export default function App() {
           </div>
           <div>
             <h1 className="text-md sm:text-lg font-black tracking-tight uppercase font-display text-[#141414] flex items-center gap-2">
-              Autonomous Data Science Agent
+              Autonomous Machine Learning Agent
               <span className="text-[10px] font-mono font-normal opacity-50 hidden sm:inline">v1.0.4-PRO</span>
             </h1>
             {fileName && (
