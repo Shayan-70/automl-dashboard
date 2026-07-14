@@ -217,7 +217,7 @@ export default function DatasetAnalyzer({
           <AlertTriangle className="w-5.5 h-5.5 text-yellow-600 flex-shrink-0 mt-0.5" />
           <div className="space-y-2">
             <h4 className="font-bold text-xs uppercase tracking-wider font-mono">
-              Data Science Agent Alerts ({warnings.length})
+              Machine Learning Agent Alerts ({warnings.length})
             </h4>
             <ul className="list-disc pl-4 text-xs space-y-1.5 leading-relaxed font-mono">
               {warnings.map((warn, i) => (
