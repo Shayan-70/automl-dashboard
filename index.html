@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autonomous Data Science Agent</title>
+    <script>
+      // Safeguard against missing chrome.runtime.getManifest in sandboxed environments
+      (function() {
+        try {
+          if (typeof window !== 'undefined') {
+            var chr = window.chrome || {};
+            if (!window.chrome) {
+              try {
+                window.chrome = chr;
+              } catch (e) {}
+            }
+            var rt = chr.runtime || {};
+            if (!chr.runtime) {
+              try {
+                chr.runtime = rt;
+              } catch (e) {}
+            }
+            if (typeof rt.getManifest !== 'function') {
+              try {
+                rt.getManifest = function() {
+                  return { version: "1.0.0" };
+                };
+              } catch (e) {}
+            }
+          }
+        } catch (e) {
+          console.warn('Unable to patch chrome.runtime.getManifest:', e);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

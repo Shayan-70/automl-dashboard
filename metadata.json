@@ -1,0 +1,6 @@
+{
+  "name": "Autonomous Data Science Agent",
+  "description": "An interactive tool that automates the full machine learning workflow: upload a CSV/Excel file, automatically preprocess and engineer features, train and evaluate multiple classification or regression models, and get live interactive predictions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
