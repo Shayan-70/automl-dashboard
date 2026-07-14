@@ -1,3 +1,5 @@
+https://automl-dashboard-77.streamlit.app/
+
 # Autonomous Data Science Agent
 
 An elegant, browser-native machine learning pipeline and data profiling sandbox. This platform allows users to upload custom datasets, perform comprehensive statistical profiling, prune unwanted columns, train multiple candidate machine learning models simultaneously, compare cross-validation metrics, and deploy models in real-time—**all running 100% locally in the browser**.
